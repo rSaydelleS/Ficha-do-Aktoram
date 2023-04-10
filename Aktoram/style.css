@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'MedievalSharp', cursive;
+    background-color: #78909c;
+}
+
+header {
+    text-transform: uppercase;
+    background-color: #1565c0;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+#text {
+    width: 380px;
+    background-color:white;
+    text-align: center;
+    margin-left: 750px;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+}
+#text h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+#first{
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-column-gap: 15px;
+    margin-top: 25px;
+}
+#skills {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-size: 20px;
+    background-color: #90a4ae;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+}
+#skills p {
+    background-color: #90a4ae;
+}
+#status {
+    margin-left: 20px;
+    background-color: #90a4ae;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+
+}  
+#sv {
+    background-color: #90a4ae;
+    font-size: 25px;
+    font-weight: bold;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+}
+.primalStats {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #90a4ae;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.subStatus {
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #90a4ae;
+    text-align: center;
+    font-size: 15px;
+}
+.test {
+    width: 1.5rem;
+    height: 1rem;
+    text-align: center;
+    color: black;
+}
+.color {
+    background-color: #90a4ae;
+}
+input {
+    background-color: #90a4ae;
+}
+label {
+    background-color: #90a4ae;
+}
+.caracter {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+#spells {
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+    margin-right: 4rem;
+}
+ul li{
+    list-style: none;
+    padding: 3px;
+    background-color: #90a4ae;
+}
+ul {
+    background-color: #90a4ae;
+    padding-top: 10px;
+}
+#proficient h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 25px;
+}
+#proficient input {
+    width: 1.5rem;
+    height: 1rem;
+    color: black;
+    text-align: center;
+    font-weight: bold; 
+}
+#proficient {
+    margin-left: 1rem;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+    background-color: #90a4ae;
+}
+#backpack {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+}
+#equip {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+    margin-right: 3rem;
+}
+#equip table {
+    border-collapse: collapse;
+    font-weight: bold;
+}
+#equip input {
+    font-weight: bold;
+    font-size: 15px;
+}
+#equip h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+#vitality {
+    background-color: #90a4ae;
+    border-style: inset;
+    border-width: 5px;
+    border-color: black;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+#vitality h2 {
+   
+    font-weight: bold;
+    font-size: 25px;
+}
+#vitality table {
+    background-color: #90a4ae;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+}
+#vitality input {
+    background-color: #90a4ae;
+    width: 3rem;
+    height: 1rem;
+    text-align: center;
+}
+#vitality table td {
+    background-color: #90a4ae;
+}
+.chose {
+    color: #1565c0;
+    font-size: 20px;
+}
+@media only screen and (min-width: 400px){
+    #header {
+        width: 100%;
+    }
+    #text {
+        text-align: center;
+        margin-left: 7rem;
+    }
+    #first {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    #status {
+        margin-bottom: 2rem;
+    }
+    #sv {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    #skills {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #equip table {
+        margin-left: 2rem;
+    }
+    #backpack {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .caracter {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #proficient {
+        margin-right: 2rem;
+    }
+    #spells {
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+}
+

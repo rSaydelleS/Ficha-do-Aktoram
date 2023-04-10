@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktoram Token</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+</head>
+<body>
+        <header>
+            <div id="text">
+                <h1>Aktoram Bakahn</h1>
+                <h2>Giff Artificer</h2>
+            </div>
+        </header>
+    <div>    
+        <div id="first">
+            <div id="status">    
+                <h2>Status</h2>
+                <label class="color">Força</label><br>
+                <input type="text" class="primalStats" value="9"><br>
+                <input class="subStatus" type="text" value="-1"><br>
+                <label class="color">Destreza</label><br>
+                <input type="text" class="primalStats" value="15"><br>
+                <input class="subStatus" type="text" value="+2"><br>
+                <label class="color">Constituição</label><br>
+                <input type="text" class="primalStats" value="12"><br>
+                <input class="subStatus" type="text" value="+1"><br>
+                <label class="color">Intelegência</label><br>
+                <input type="text" class="primalStats" value="16"><br>
+                <input class="subStatus" type="text" value="+3"><br>
+                <label class="color">Sabedoria</label><br>
+                <input type="text" class="primalStats" value="10"><br>
+                <input class="subStatus" type="text" value="0"><br>
+                <label class="color">Carisma</label><br>
+                <input type="text" class="primalStats" value="8"><br>
+                <input class="subStatus" type="text" value="-1"><br>
+            </div>
+            <div id="sv">
+                <h2>Salvaguarda</h2>
+                <input type="checkbox"><input class="test" type="text" value="-1"><label>Força</label><br>
+                <input type="checkbox"><input class="test" type="text" value="+2"><label>Destreza</label><br>
+                <input type="checkbox" checked><input class="test" type="text" value="+3"><label>Constituição</label><br>
+                <input type="checkbox" checked><input class="test" type="text" value="+5"><label>Inteligência</label><br>
+                <input type="checkbox"><input class="test" type="text" value="0"><label>Sabedoria</label><br>
+                <input type="checkbox"><input class="test" type="text" value="-1"><label>Carisma</label><br>
+            </div>
+            <div id="skills">
+                <h2>Habilidades</h2>
+                <p>Idiomas: comum e anão.<br>
+                <b>Engenharia mágica:</b> apartir do primeiro nível, eu posso criar magia com os objetos 
+                mundanos utilizando ferramntes de artesão ou ladrão. Os efeitos podem ser de uma 
+                pequena luz com 1,5m de raio. Criar uma mensagem gravada que pode ser ouvida até 3m
+                e a gravação não pode ter masi de 6 segundos de duração. O objeto produz um som não verbal
+                um som da natureza<br>
+                <b>Infundir Itens:</b> apartir do segundo nível pode infundir itens normais e tornar eles mágicos:<br>
+                <b>Disparo recorrente:</b> a arma se torna mágica e +1, agora a arma não precisa mais ser recarregada
+                pois é recaregada sozinha.<br>
+                <b>Defesa Aprimorada:</b> requer uma armadura ou escudo, quando o usuário estiver usando esse iten
+                adiciona +1 para a sua CA.<br>
+                <b>Foco arcano aprimorado:</b> arma mágica +1 quando o conjurador utilza esse foco arcano para
+                usar magias que requerem um ataque á distância, ignora meio cobertura.<br>
+                <b>Replicar item mágico:</b> bag of holding.
+                </p>
+            </div>
+        </div>
+        <div id="backpack">
+            <div class="color" id="equip">
+                <h2>Equipamentos</h2>
+                <table>
+                    <tr>
+                        <th class="color">Nome</th>
+                        <th class="color">Acerto</th>
+                        <th class="color">Dano</th>
+                    </tr>                    
+                    <tr>
+                        <td><input type="text" value="Lança"></td>
+                        <td><input type="text"value="+4"></td>
+                        <td><input type="text"value="1D6 +2"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"value="Besta Leve"></td>
+                        <td><input type="text"value="+4"></td>
+                        <td><input type="text"value="1D8 +4"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>   
+            </div>
+            <div id="vitality">
+                <h2>Vida</h2>
+                <table>
+                    <tr>
+                        <th class="color">Dado de Vida</th>
+                        <th class="color">Pontos de vida totais</th>
+                    </tr>
+                    <tr>
+                        <td class="color">D8</td>
+                        <td class="color">9</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th class="color">Vida atual</th>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </div> 
+        </div>
+        <div class="caracter">
+            <div  id="proficient">
+                <h2>Proficiências</h2>
+                <input type="text" value="+2"><label>Bônus de Proficiência</label><br>
+                <input type="checkbox" checked><input type="text" value="+4"><label>Acrobacia</label><br>
+                <input type="checkbox" checked><input type="text" value="+5"><label>Arcanismo</label><br>
+                <input type="checkbox"><input type="text" value="-1"><label>Atletismo</label><br>
+                <input type="checkbox"><input type="text" value="-1"><label>Atuação</label><br>
+                <input type="checkbox"><input type="text" value="-1"><label>Enganação</label><br>
+                <input type="checkbox"><input type="text" value="+2"><label>Furtividade</label><br>
+                <input type="checkbox" checked><input type="text" value="+5"><label>História</label><br>
+                <input type="checkbox"><input type="text" value="-1"><label>Intimidação</label><br>
+                <input type="checkbox"><input type="text" value="0"><label>Intuição</label><br>
+                <input type="checkbox" checked><input type="text" value="+5"><label>Investigação</label><br>
+                <input type="checkbox"><input type="text" value="0"><label>Lidar com Animais</label><br>
+                <input type="checkbox"><input type="text" value="0"><label>Medicina</label><br>
+                <input type="checkbox"><input type="text" value="+3"><label>Natureza</label><br>
+                <input type="checkbox"><input type="text" value="0"><label>Percepção</label><br>
+                <input type="checkbox"><input type="text" value="-1"><label>Persuação</label><br>
+                <input type="checkbox"><input type="text" value="+2"><label>Prestidigitação</label><br>
+                <input type="checkbox"><input type="text" value="+3"><label>religião</label><br>
+                <input type="checkbox"><input type="text" value="0"><label>Sobrevivência</label><br>
+            </div>
+        
+        <div class="color" id="spells" class="caracter">
+            <h2>Magias</h2>
+            <h3>CD:13</h3>
+            <h3>Modificador de magia:+5</h3>
+            <ul>Truques
+                <li>Raio de fogo 1D10</li>
+                <li>Proteção contra lâminas. Dá resistência à dano físico por um turno</li>
+                <li>Rompante de espadas 1D6. Raio de 1,5m do conjurador</li>
+                <li>Rajada de veneno 1D12. Ataque à distância</li>
+                <li>Mãos mágicas</li>
+                <li>Raio de gelo 1D8</li>
+            </ul>
+            <ul>Primeiro Circulo
+                <li id="spell1" onclick="chosenOne('#spell1')"><input type="checkbox">Curar ferimentos 1D8+5</li>
+                <li id="spell2" onclick="chosenOne('#spell2')"><input id="spell2" type="checkbox" >Detectar magia</li>
+                <li id="spell3" onclick="chosenOne('#spell3')"><input type="checkbox">Baragem cáustica de Tashas 2D4. Linha de 9m SV destreza</li>
+                <li id="spell4" onclick="chosenOne('#spell4')"><input type="checkbox">Fogo das fadas. SV destreza, o alvo é atacado com vantagem</li>
+                <li id="spell5" onclick="chosenOne('#spell5')"><input type="checkbox" >Santuário ação bônus. Protege um criatura até 9m, essa criatura 
+                protegida não pode atacar senão a magia acaba, caso alguém tente atacar a criatura protegida deve sem bem sucedido em um SV de sabedoria,
+                se falhar escolhe outro alvo</li>
+                <li id="spell6" onclick="chosenOne('#spell6')"><input type="checkbox">Mísseis mágicos, ataque à distância 3 mísseis 2D4 cada</li>
+                <li id="spell7" onclick="chosenOne('#spell7')"><input  type="checkbox" >Onda trovejante, 2D8 a um raio de 4,5m do conjurador</li>
+                <li id="spell8" onclick="chosenOne('#spell8')"><input type="checkbox">Mãos flamejantes 3D6. Cone de 4,5m SV de destreza</li>
+                <li id="spell9" onclick="chosenOne('#spell9')"><input type="checkbox">Escudo arcano +5CA, reação</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

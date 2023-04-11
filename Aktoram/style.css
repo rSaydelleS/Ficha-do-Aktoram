@@ -33,7 +33,7 @@ header {
     margin-top: 25px;
 }
 #skills {
-    margin-right: 1rem;
+    margin-right: 4rem;
     margin-left: 1rem;
     font-size: 20px;
     background-color: #90a4ae;
@@ -61,6 +61,9 @@ header {
     border-style: inset;
     border-width: 5px;
     border-color: black;
+}
+.move {
+    margin-left: 4rem;
 }
 .primalStats {
     width: 60px;
@@ -139,7 +142,7 @@ ul {
 #backpack {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-gap: 20px;
+    grid-gap: 1rem;
 }
 #equip {
     margin-top: 1rem;
@@ -162,7 +165,9 @@ ul {
     font-size: 25px;
 }
 #vitality {
-    background-color: #90a4ae;
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: column;
     border-style: inset;
     border-width: 5px;
     border-color: black;
@@ -176,31 +181,31 @@ ul {
     font-size: 25px;
 }
 #vitality table {
-    background-color: #90a4ae;
+    
     padding: 1rem;
     text-align: center;
-    width: 20rem;
+    width: 14rem;
 }
 #vitality input {
-    background-color: #90a4ae;
     width: 3rem;
     height: 1rem;
     text-align: center;
 }
-#vitality table td {
-    background-color: #90a4ae;
+#vitality textarea {
+    font-weight: bold;
+    font-size: 1rem;
 }
 .chose {
     color: #1565c0;
     font-size: 20px;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 800px){
     #header {
         width: 100%;
     }
     #text {
         text-align: center;
-        margin-left: 7rem;
+        margin-left: 10rem;
     }
     #first {
         display: flex;
@@ -226,6 +231,7 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
     }
     .caracter {
         display: flex;

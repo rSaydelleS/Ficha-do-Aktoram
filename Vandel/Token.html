@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+    <title>Vandel´s Token</title>
+    <style>
+        body{
+            text-transform: uppercase;
+            font-family: 'MedievalSharp', cursive;
+            background-color: beige;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-column-gap: 20px;
+        }
+        #headline {
+            width: 100%;
+            background-color: darkred;
+        }
+        #headline h1, h2 {
+            margin: 0;
+        }
+        #name {
+            text-align: center;
+            padding: 0px;
+            background-color: white;
+            width: 300px;
+            margin: 0 auto;
+        }
+        #stats {
+            margin-top: 50px;
+            border: ridge 3px black;
+        }
+        .principal {
+            width: 50px;
+            height: 50px;
+            border-radius: 30%;
+            text-align: center;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .plus {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 16px;
+            margin-left: 18px;
+        }
+        #stats label {
+            font-size: 24px;   
+        }
+        #equip {
+            margin-top: 50px;
+        }
+        #equip h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+        #equip label {
+            padding: 50px;
+            font-size: 20px;
+        }
+        #equip input {
+            width: 180px;
+            border: none;
+            background-color: white;
+            margin-left: 10px;
+        }
+        #equip {
+            border: ridge 3px black;
+        }
+        #inventory textarea {
+            background-color: beige;
+            font-family: 'MedievalSharp', cursive;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        #name1 {
+            margin-left: 20px;
+        }
+        #skills{
+            margin-top: 50px;
+            border: ridge 3px black;
+
+        }
+        #skills h3 {
+            font-size: 30px;
+        }
+        #spells {
+            margin-top: 50px;
+            border: ridge 3px black;
+        }
+        #spells h3 {
+            font-size: 30px;
+        }
+        #spells ul {
+            font-size: 20px;
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="headline">
+        <div id="name">
+            <h1>montreal vandel</h1>
+            <h2>woodelf ranger</h2>
+        </div>
+    </div>
+    <div id="container">
+        <div id="stats">
+            <form>
+                <label>força</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+                <label>destreza</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+                <label>constituição</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+                <label>inteligência</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+                <label>sabedoria</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+                <label>carisma</label><br>
+                <input class="principal" type="number"><br>
+                <input class="plus" type="text"><br>
+            </form>
+        </div>
+        <div id="equip">
+            <h3>armas</h3>
+            <label id="name1">nome</label><label>acerto</label><label>dano</label><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <input class="name1" type="text"><input type="text"><input type="text"><br>
+            <div id="inventory">
+                <h3>equipamentos de viagem</h3>
+                <form>
+                    <textarea rows="16" cols="118" type="text"></textarea>
+                </form>    
+            </div>
+        </div>
+        <div id="skills">
+            <h3>Habilidades de combate</h3><br>
+            <p>
+                <b>marca do caçador:</b>com uma ação bônus, pode marcar um alvo que possa ver dentro do alcance, o conjurador saberá
+                todas as resistências, fraquezas e imunidades do alvo. sempre que causar dano no alvo pode rolar 1d6 de dano. no seu turno
+                com uma acão bônus pode trocar de alvo caso o mesmo tenha morrido.<br>
+                <br>
+                <b>combate com duas armas:</b> pode aplicar o bonus de proficiência nas jogadas de ataque e dano com a segunda arma<br>
+                <br>
+                <b>selvageria dupla:</b> pode usar uma arma que não seja leve como se fosse uma se estiver empunhando uma arma leve na outra
+                mão contando que a arma não seja pesada. aumenta a destreza ou força em 1.<br>
+                <br>
+                <b>presa do caçador:</b> uma vez por turno se a criatura não estiver com o máximo de pontos de vida, pode causar 1d8 no ataque
+                com armado ou desarmado.<br>
+            </p>
+        </div>
+        <div id="spells">
+            <h3>magias</h3>
+            <label>ação</label><br>
+            <br>
+            <div id="magia">
+                <input type="checkbox" onmouseover="usar()" onmouseout="sair()"><b>curas ferimentos:</b> ao toque cura uma criatura voluntaria em 1d8+nível de conjurador.</input><br>
+                <input type="checkbox" onmouseover="usar()" onmouseout="sair()"><b>passos longo:</b> toca uma criatura e o seu deslocamento aumenta em 3m, dura 1 hora.</input> <br>
+                <input type="checkbox" onmouseover="usar()" onmouseout="sair()"><b>pele de árvore:</b> toca uma criatura e sua ca não pode ser inferior à 16, dura 1 hora.</input> <br>
+                <input type="checkbox" onmouseover="usar()" onmouseout="sair()"><b>encontrar armadilhas:</b> após conujurar dentro de 36 metros sente a presença de qua</input> <br>
+                <input type="checkbox" onmouseover="usar()" onmouseout="sair()"><b>silêncio:</b> numa esféra de 6 metros de raio, nenhum som pode ser criado ou entrar na esfera pela duração.</input> <br>
+                <br>
+            </div> 
+            <label>ação bônus</label><br> 
+            <div id="magia2">  
+            <br>
+                <input type="checkbox" onmouseover="usar2()" onmouseout="sair2()"><b>golpe conscritor:</b> quando atingir uma criatura e causar dano, vinhas crescerão e o alvo ficará impedido,
+                caso não for bem sucedido em um teste de destreza, receberá 1d6 de dano adicional.</input><br>
+                <input type="checkbox" onmouseover="usar2()" onmouseout="sair2()"><b>saraivada de espinhos:</b> quando causar dano a um criatura com um ataque a distancia, da muniçao sai uma chuva de espinhos que causa
+                1d10 ou metade se for bem sucedido em um teste de destreza.</input><br>
+            </div>
+    </div>
+    <script>
+        function usar(){
+           magia.style.color = 'red' 
+        }
+        function sair(){
+            magia.style.color = 'black'
+        }
+        function usar2(){
+           magia2.style.color = 'red' 
+        }
+        function sair2(){
+            magia2.style.color = 'black'
+        }
+    </script>
+</body>
+</html>

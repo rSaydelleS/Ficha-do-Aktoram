@@ -225,13 +225,19 @@ ul {
         margin-left: 0;
     }
     #equip table {
-        margin-left: 2rem;
+        width: 1rem;
+        margin-left: 1.5rem;
+    }
+    #equip input {
+        width: 7rem;
     }
     #backpack {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
-
+    }
+    #vitality {
+        display: flex;
+        flex-direction: column;
     }
     .caracter {
         display: flex;
